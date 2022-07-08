@@ -4,24 +4,12 @@ Created on Sun Jul  3 10:36:41 2022
 
 @author: asus
 """
-
+import torch
 import numpy as np
 from scipy import sparse
-import pandas as pd
-import networkx as nx
 import matplotlib as mpl
 # mpl.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.cm import ScalarMappable
-import random
-import os
-import gc
-from tqdm import tqdm
-import shutil
-from torch.autograd import Variable
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 #设置汉字格式
 # sans-serif就是无衬线字体，是一种通用字体族。
 # 常见的无衬线字体有 Trebuchet MS, Tahoma, Verdana, Arial, Helvetica,SimHei 中文的幼圆、隶书等等
@@ -31,12 +19,6 @@ mpl.rcParams['axes.unicode_minus'] = False # 解决保存图像是负号'-'显�
 plt.rcParams.update({"font.size":16})#此处必须添加此句代码方可改变标题字体大小
 plt.rcParams['xtick.direction'] = 'in'  # in; out; inout
 plt.rcParams['ytick.direction'] = 'in'
-
-import cv2
-import aspose.words as aw
-import cairosvg
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPM
 
 
 #%%
